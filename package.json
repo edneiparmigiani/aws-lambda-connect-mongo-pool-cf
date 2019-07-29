@@ -1,5 +1,5 @@
 {
-  "name": "aws-lambda-connect-mongo-pool-worker",
+  "name": "aws-lambda-connect-mongo-pool-cf",
   "version": "1.0.0",
   "description": "POC - NodeJS com mongodb na Atlas executando na AWS Lambda um trabalhador único",
   "main": "handler.js",
