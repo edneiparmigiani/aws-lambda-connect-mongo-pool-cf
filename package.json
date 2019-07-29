@@ -1,0 +1,16 @@
+{
+  "name": "aws-lambda-connect-mongo-pool-worker",
+  "version": "1.0.0",
+  "description": "POC - NodeJS com mongodb na Atlas executando na AWS Lambda um trabalhador único",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ednei José Parmigiani Júnior",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.2.7",
+    "aws-sdk": "^2.465.0"
+  }
+}

@@ -1,0 +1,28 @@
+service: aws-lambda-connect-mongo-pool-cf
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: sa-east-1
+
+functions:
+  work:
+    handler: worker.work
+  chiefJr:
+    handler: chiefJr.doIt
+    events:
+      - http:
+          path: v1/parmigiani/labs/chief-jr
+          method: get
+  chiefPl:
+    handler: chiefPl.doIt
+    events:
+      - http:
+          path: v1/parmigiani/labs/chief-pl
+          method: get
+  chiefSr:
+    handler: chiefSr.doIt
+    events:
+      - http:
+          path: v1/parmigiani/labs/chief-sr
+          method: get
